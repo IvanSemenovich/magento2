@@ -3,10 +3,12 @@
     <head>
         <title>Overdose</title>
     </head>
-    <referenceContainer name="content">
-        <block
-            name="firstmodule_index_test"
-            class="Magento\Framework\View\Element\Template"
-            template="Overdose_FirstModule::test.phtml"/>
-    </referenceContainer>
+    <body>
+        <referenceContainer name="content">
+            <block
+                name="firstmodule_index_test"
+                class="Magento\Framework\View\Element\Template"
+                template="Overdose_FirstModule::test.phtml"/>
+        </referenceContainer>
+    </body>
 </page>
