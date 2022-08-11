@@ -1,0 +1,18 @@
+{
+    "reviews_table": {
+        "column": {
+            "review_id": true,
+            "customer_id": true,
+            "product_id": true,
+            "username": true,
+            "title": true,
+            "description": true,
+            "rating": true,
+            "entity_id": true
+        },
+        "index": {
+            "REVIEWS_TABLE_REVIEW_ID": true,
+            "REVIEWS_TABLE_ENTITY_ID": true
+        }
+    }
+}

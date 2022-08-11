@@ -1,0 +1,13 @@
+<?php
+/**
+ * @var \Overdose\Reviews\ViewModel\Reviews $viewModel
+ * @var \Magento\Framework\View\Element\Template $block
+ */
+
+$viewModel = $block->getData('view_model');
+?>
+
+<?php foreach ($viewModel->getReviewsByCustomerId() as $value):?>
+<h1><?php  echo $value->getTitle(); ?></h1>
+<h1><?php  echo $value->getDescription(); ?></h1>
+<?php endforeach;

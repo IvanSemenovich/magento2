@@ -7,8 +7,9 @@
         <referenceContainer name="content">
             <block
                 name="firstmodule_index_test"
-                class="Magento\Framework\View\Element\Template"
+                class="Overdose\FirstModule\Block\Layout\Index"
                 template="Overdose_FirstModule::test.phtml"/>
+
         </referenceContainer>
     </body>
 </page>

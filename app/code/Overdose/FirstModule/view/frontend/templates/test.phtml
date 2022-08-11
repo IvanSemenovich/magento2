@@ -1,1 +1,25 @@
-<h2>Welcome to Test</h2>
+
+<?php
+    /**
+     * @var Overdose\FirstModule\Block\Layout\Index $block
+     */
+?>
+<h2><?php echo $block->getPisya()?></h2>
+
+<?php foreach ($block->getAllProductList() as $value):?>
+
+<h1><?php echo $value->getName()?></h1>
+
+
+<?php endforeach;?>
+
+<hr>
+
+<?php /** @var \Magento\Catalog\Model\Product $value */
+foreach ($block->getCheapProducts("100") as $value):?>
+
+<h1><?php  echo $value->getName() ?></h1>
+<p><?php  echo $value->getPrice() ?></p>
+
+<?php endforeach;?>
+

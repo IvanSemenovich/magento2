@@ -1,0 +1,17 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+        <table name="reviews_table">
+            <column xsi:type="int" name="entity_id" unsigned="true" nullable="false" identity="true"
+                    comment="Entity ID"/>
+            <column xsi:type="int" name="product_id" padding="10" unsigned="true" nullable="false" />
+            <column xsi:type="int" name="customer_id" padding="10" unsigned="true" nullable="true" default="null"/>
+            <column xsi:type="varchar" name="username" nullable="false" length="255" comment="Client name"/>
+            <column xsi:type="varchar" name="title" nullable="false" length="255" comment="Title"/>
+            <column xsi:type="varchar" name="description" nullable="false" length="255" comment="Description"/>
+            <column xsi:type="int" name="rating" nullable="false"  comment="Rating"/>
+
+            <constraint xsi:type="primary" referenceId="PRIMARY">
+                <column name="entity_id"/>
+            </constraint>
+        </table>
+</schema>

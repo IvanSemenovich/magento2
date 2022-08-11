@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block
+                after="product.info.details"
+                name="review_index"
+                template="Overdose_Reviews::index.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Overdose\Reviews\ViewModel\Reviews</argument>
+                </arguments>
+            </block>
+            <block after="review_index"
+                   name="review_info"
+                   template="Overdose_Reviews::reviews.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Overdose\Reviews\ViewModel\Reviews</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+    </body>
+</page>
